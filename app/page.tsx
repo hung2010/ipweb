@@ -3,9 +3,10 @@
 import { useState } from "react"
 import { IPInfo } from "@/components/ip-info"
 import { TaxLookup } from "@/components/tax-lookup"
-import { Globe, Building2 } from "lucide-react"
+import { PDFTools } from "@/components/pdf-tools"
+import { Globe, Building2, FileText } from "lucide-react"
 
-type Tab = "ip" | "tax"
+type Tab = "ip" | "tax" | "pdf"
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<Tab>("ip")
@@ -38,16 +39,29 @@ export default function Home() {
               <Building2 className="h-4 w-4" />
               Mã Số Thuế
             </button>
+            <button
+              onClick={() => setActiveTab("pdf")}
+              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                activeTab === "pdf"
+                  ? "bg-background text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <FileText className="h-4 w-4" />
+              Công cụ PDF
+            </button>
           </div>
         </div>
 
         {/* Tab Content */}
-        {activeTab === "ip" ? <IPInfo /> : <TaxLookup />}
+        {activeTab === "ip" && <IPInfo />}
+        {activeTab === "tax" && <TaxLookup />}
+        {activeTab === "pdf" && <PDFTools />}
 
         {/* Footer */}
         <footer className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>
-            Check IP | Tra cứu Mã Số Thuế - Công cụ tra cứu miễn phí
+            Check IP | Tra cứu Mã Số Thuế | Công cụ PDF - Miễn phí
           </p>
         </footer>
       </div>

@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Check IP | Tra Cứu Mã Số Thuế - Công cụ tra cứu miễn phí',
-  description: 'Check IP, IP Location, Tra cứu mã số thuế doanh nghiệp - Kiểm tra địa chỉ IP, tra cứu thông tin công ty, mã số thuế cá nhân nhanh chóng và chính xác.',
+  title: 'Check IP | Tra Cứu Mã Số Thuế | Công cụ PDF - Miễn phí',
+  description: 'Check IP, IP Location, Tra cứu mã số thuế doanh nghiệp, Chuyển đổi PDF sang ảnh/Word/Excel, Nén PDF - Các công cụ tra cứu và xử lý tài liệu miễn phí.',
   generator: 'v0.app',
   icons: {
     icon: [
