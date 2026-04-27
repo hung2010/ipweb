@@ -1,20 +1,20 @@
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import Script from "next/script"
 
 const geist = Geist({
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin"],
   variable: "--font-geist-sans",
 })
 
 const geistMono = Geist_Mono({
-  subsets: ["latin", "vietnamese"],
+  subsets: ["latin"],
   variable: "--font-geist-mono",
 })
 
-const siteUrl = "https://prev.io.vn" // Sau này có domain riêng thì đổi ở đây
+const siteUrl = "https://prev.io.vn"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -46,42 +46,40 @@ export const metadata: Metadata = {
   authors: [{ name: "Hung" }],
   creator: "Hung",
   publisher: "PREV",
-
   applicationName: "PREV",
   generator: "Next.js",
 
   verification: {
-  google: "FE9klt5LLEtNppMyDcb0z-cMJdzaUn6GDVAsv2Rpfd0",
-},
-
+    google: "FE9klt5LLEtNppMyDcb0z-cMJdzaUn6GDVAsv2Rpfd0",
+  },
 
   alternates: {
     canonical: "/",
   },
 
-openGraph: {
-  title: "PREV - Công cụ Check IP, mã số thuế và PDF miễn phí",
-  description:
-    "Check IP, tra cứu mã số thuế, chuyển đổi PDF, nén PDF và ghép ảnh thành PDF miễn phí ngay trên trình duyệt.",
-  url: siteUrl,
-  siteName: "PREV",
-  locale: "vi_VN",
-  type: "website",
-  images: [
-    {
-      url: "/og-image.png",
-      width: 1200,
-      height: 630,
-      alt: "PREV - Công cụ miễn phí",
-    },
-  ],
-},
+  openGraph: {
+    title: "PREV - Công cụ Check IP, mã số thuế và PDF miễn phí",
+    description:
+      "Check IP, tra cứu mã số thuế, chuyển đổi PDF, nén PDF và ghép ảnh thành PDF miễn phí ngay trên trình duyệt.",
+    url: siteUrl,
+    siteName: "PREV",
+    locale: "vi_VN",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "PREV - Công cụ miễn phí",
+      },
+    ],
+  },
 
   twitter: {
     card: "summary_large_image",
     title: "PREV - Công cụ miễn phí",
-    description:
-      "Check IP, tra cứu mã số thuế và xử lý PDF online miễn phí.",
+    description: "Check IP, tra cứu mã số thuế và xử lý PDF online miễn phí.",
+    images: ["/og-image.png"],
   },
 
   robots: {
@@ -121,7 +119,6 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 }
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -133,24 +130,35 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
-        
-        {process.env.NODE_ENV === "production" && (
-        <>
-          <Script
-            src="https://www.googletagmanager.com/gtag/js?id=G-G5SQPC0F9Y"
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-G5SQPC0F9Y');
-            `}
-          </Script>
-        </>
-      )}
 
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              id="google-adsense"
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2902085989377653"
+              strategy="afterInteractive"
+              crossOrigin="anonymous"
+            />
+
+            <Script
+              id="google-analytics-src"
+              src="https://www.googletagmanager.com/gtag/js?id=G-G5SQPC0F9Y"
+              strategy="afterInteractive"
+            />
+
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-G5SQPC0F9Y');
+              `}
+            </Script>
+
+            <Analytics />
+          </>
+        )}
       </body>
     </html>
   )
