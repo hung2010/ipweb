@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Giới thiệu | IPWeb",
+  title: "Giới thiệu | PREV",
   description:
-    "Giới thiệu về IPWeb và các công cụ online miễn phí dành cho người dùng.",
+    "Giới thiệu về PREV và các công cụ online miễn phí dành cho người dùng.",
 }
 
 export default function Page() {
@@ -11,7 +11,7 @@ export default function Page() {
 
       <div className="mt-6 space-y-4 text-sm text-muted-foreground leading-relaxed">
         <p>
-          IPWeb là website cung cấp các công cụ online miễn phí giúp người dùng
+          PREV là website cung cấp các công cụ online miễn phí giúp người dùng
           xử lý công việc nhanh chóng và tiện lợi.
         </p>
 

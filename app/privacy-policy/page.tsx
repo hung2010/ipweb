@@ -12,7 +12,7 @@ export default function Page() {
       <div className="mt-6 space-y-4 text-sm text-muted-foreground leading-relaxed">
         <p>
           Chúng tôi cam kết bảo vệ quyền riêng tư của người dùng khi sử dụng các
-          công cụ trên IPWeb.
+          công cụ trên PREV.
         </p>
 
         <h2 className="font-semibold text-foreground">1. Thu thập thông tin</h2>
