@@ -50,6 +50,11 @@ export const metadata: Metadata = {
   applicationName: "PREV",
   generator: "Next.js",
 
+  verification: {
+  google: "FE9klt5LLEtNppMyDcb0z-cMJdzaUn6GDVAsv2Rpfd0",
+},
+
+
   alternates: {
     canonical: "/",
   },
@@ -116,13 +121,6 @@ export const viewport: Viewport = {
   themeColor: "#ffffff",
 }
 
-export const metadata = {
-  title: '...',
-  description: '...',
-  verification: {
-    google: "FE9klt5LLEtNppMyDcb0z-cMJdzaUn6GDVAsv2Rpfd0",
-  },
-}
 
 export default function RootLayout({
   children,
