@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import Script from "next/script"
 
 const geist = Geist({
   subsets: ["latin", "vietnamese"],
@@ -126,9 +127,13 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
+        
         {process.env.NODE_ENV === "production" && (
         <>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5SQPC0F9Y"></script>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-G5SQPC0F9Y"
+            strategy="afterInteractive"
+          />
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
@@ -139,7 +144,7 @@ export default function RootLayout({
           </Script>
         </>
       )}
-        
+
       </body>
     </html>
   )
