@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Liên hệ | IPWeb",
+  title: "Liên hệ | PREV",
   description:
-    "Thông tin liên hệ và hỗ trợ người dùng IPWeb.",
+    "Thông tin liên hệ và hỗ trợ người dùng PREV.",
 }
 
 export default function Page() {

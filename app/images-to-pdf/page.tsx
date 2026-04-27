@@ -3,7 +3,7 @@ import { PDFTools } from "@/components/pdf-tools"
 import { ArrowLeft, FileImage, Zap, ShieldCheck, ImageIcon } from "lucide-react"
 
 export const metadata = {
-  title: "Chuyển PDF sang ảnh PNG miễn phí | IPWeb",
+  title: "Chuyển PDF sang ảnh PNG miễn phí | PREV",
   description:
     "Công cụ chuyển PDF sang ảnh PNG chất lượng cao online miễn phí. Xử lý trực tiếp trên trình duyệt, không cần upload server.",
 }

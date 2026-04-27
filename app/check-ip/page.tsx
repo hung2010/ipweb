@@ -3,7 +3,7 @@ import { IPInfo } from "@/components/ip-info"
 import { ArrowLeft, Globe, ShieldCheck, Zap, MapPin } from "lucide-react"
 
 export const metadata = {
-  title: "Check IP - Kiểm tra địa chỉ IP miễn phí | IPWeb",
+  title: "Check IP - Kiểm tra địa chỉ IP miễn phí | PREV",
   description:
     "Kiểm tra địa chỉ IP của bạn, xem vị trí IP, ISP, quốc gia, thành phố và thông tin mạng nhanh chóng miễn phí.",
 }

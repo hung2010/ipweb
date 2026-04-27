@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Chính sách bảo mật | IPWeb",
+  title: "Chính sách bảo mật | PREV",
   description:
-    "Chính sách bảo mật và quyền riêng tư khi sử dụng các công cụ trên IPWeb.",
+    "Chính sách bảo mật và quyền riêng tư khi sử dụng các công cụ trên PREV.",
 }
 
 export default function Page() {

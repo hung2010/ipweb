@@ -58,7 +58,7 @@ const tools = [
 ]
 
 export const metadata = {
-  title: "IPWeb - Công cụ PDF, Check IP và tra cứu mã số thuế miễn phí",
+  title: "PREV - Công cụ PDF, Check IP và tra cứu mã số thuế miễn phí",
   description:
     "Bộ công cụ online miễn phí: Check IP, tra cứu mã số thuế, chuyển PDF sang ảnh, PDF sang Word, PDF sang CSV, nén PDF và ghép ảnh thành PDF.",
 }
@@ -70,11 +70,11 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-sm">
-              IP
+              PV
             </div>
 
             <div>
-              <p className="font-bold leading-none">IPWeb</p>
+              <p className="font-bold leading-none">PREV</p>
               <p className="text-xs text-muted-foreground">
                 Công cụ online miễn phí
               </p>
@@ -208,7 +208,7 @@ export default function Home() {
 
         <div className="mt-4 space-y-4 text-muted-foreground leading-relaxed">
           <p>
-            IPWeb cung cấp các công cụ miễn phí giúp bạn kiểm tra địa chỉ IP,
+            PREV cung cấp các công cụ miễn phí giúp bạn kiểm tra địa chỉ IP,
             tra cứu mã số thuế doanh nghiệp và xử lý file PDF trực tuyến.
           </p>
 
@@ -300,7 +300,7 @@ export default function Home() {
 
       <footer className="border-t">
         <div className="container mx-auto max-w-6xl px-4 py-8 flex flex-col md:flex-row justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} IPWeb. Công cụ online miễn phí.</p>
+          <p>© {new Date().getFullYear()} PREV. Công cụ online miễn phí.</p>
 
           <div className="flex flex-wrap gap-4">
             <Link href="/privacy-policy" className="hover:text-foreground">

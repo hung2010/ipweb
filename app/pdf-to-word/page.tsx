@@ -3,7 +3,7 @@ import { PDFTools } from "@/components/pdf-tools"
 import { ArrowLeft, FileText, Zap, ShieldCheck, FileDown } from "lucide-react"
 
 export const metadata = {
-  title: "Chuyển PDF sang Word miễn phí | IPWeb",
+  title: "Chuyển PDF sang Word miễn phí | PREV",
   description:
     "Công cụ chuyển PDF sang Word (.doc) miễn phí, trích xuất nội dung nhanh chóng, không cần upload server, bảo mật cao.",
 }

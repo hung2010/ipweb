@@ -3,7 +3,7 @@ import { PDFTools } from "@/components/pdf-tools"
 import { ArrowLeft, Minimize2, Zap, ShieldCheck, FileDown } from "lucide-react"
 
 export const metadata = {
-  title: "Nén PDF miễn phí - Giảm dung lượng PDF online | IPWeb",
+  title: "Nén PDF miễn phí - Giảm dung lượng PDF online | PREV",
   description:
     "Công cụ nén PDF miễn phí giúp giảm dung lượng file nhanh chóng, không cần upload server, đảm bảo riêng tư.",
 }

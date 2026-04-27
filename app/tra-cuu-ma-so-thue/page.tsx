@@ -3,7 +3,7 @@ import { TaxLookup } from "@/components/tax-lookup"
 import { ArrowLeft, Building2, Search, Zap, ShieldCheck } from "lucide-react"
 
 export const metadata = {
-  title: "Tra cứu mã số thuế doanh nghiệp miễn phí | IPWeb",
+  title: "Tra cứu mã số thuế doanh nghiệp miễn phí | PREV",
   description:
     "Tra cứu mã số thuế doanh nghiệp, xem thông tin công ty nhanh chóng và miễn phí theo mã số thuế.",
 }

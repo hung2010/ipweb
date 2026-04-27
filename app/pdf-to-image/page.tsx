@@ -3,7 +3,7 @@ import { PDFTools } from "@/components/pdf-tools"
 import { ArrowLeft, ImageIcon, Zap, ShieldCheck, FileText } from "lucide-react"
 
 export const metadata = {
-  title: "Ghép ảnh thành PDF miễn phí | IPWeb",
+  title: "Ghép ảnh thành PDF miễn phí | PREV",
   description:
     "Công cụ ghép nhiều ảnh JPG, PNG thành một file PDF miễn phí, nhanh chóng và xử lý trực tiếp trên trình duyệt.",
 }

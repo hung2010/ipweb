@@ -3,7 +3,7 @@ import { PDFTools } from "@/components/pdf-tools"
 import { ArrowLeft, FileSpreadsheet, Zap, ShieldCheck, Table } from "lucide-react"
 
 export const metadata = {
-  title: "Chuyển PDF sang CSV miễn phí | IPWeb",
+  title: "Chuyển PDF sang CSV miễn phí | PREV",
   description:
     "Công cụ chuyển PDF sang CSV giúp trích xuất dữ liệu bảng từ PDF nhanh chóng và dễ dàng, hỗ trợ mở bằng Excel.",
 }

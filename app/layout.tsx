@@ -19,12 +19,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "IPWeb - Check IP, Tra cứu mã số thuế và công cụ PDF miễn phí",
-    template: "%s | IPWeb",
+    default: "PREV - Check IP, Tra cứu mã số thuế và công cụ PDF miễn phí",
+    template: "%s | PREV",
   },
 
   description:
-    "IPWeb cung cấp công cụ Check IP, kiểm tra IP Location, tra cứu mã số thuế doanh nghiệp, chuyển PDF sang ảnh, PDF sang DOC, PDF sang CSV, nén PDF và ghép ảnh thành PDF miễn phí.",
+    "PREV cung cấp công cụ Check IP, kiểm tra IP Location, tra cứu mã số thuế doanh nghiệp, chuyển PDF sang ảnh, PDF sang DOC, PDF sang CSV, nén PDF và ghép ảnh thành PDF miễn phí.",
 
   keywords: [
     "check ip",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
 
   authors: [{ name: "Hung" }],
   creator: "Hung",
-  publisher: "IPWeb",
+  publisher: "PREV",
 
-  applicationName: "IPWeb",
+  applicationName: "PREV",
   generator: "Next.js",
 
   alternates: {
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
   },
 
 openGraph: {
-  title: "IPWeb - Công cụ Check IP, mã số thuế và PDF miễn phí",
+  title: "PREV - Công cụ Check IP, mã số thuế và PDF miễn phí",
   description:
     "Check IP, tra cứu mã số thuế, chuyển đổi PDF, nén PDF và ghép ảnh thành PDF miễn phí ngay trên trình duyệt.",
   url: siteUrl,
-  siteName: "IPWeb",
+  siteName: "PREV",
   locale: "vi_VN",
   type: "website",
   images: [
@@ -66,14 +66,14 @@ openGraph: {
       url: "/og-image.png",
       width: 1200,
       height: 630,
-      alt: "IPWeb - Công cụ miễn phí",
+      alt: "PREV - Công cụ miễn phí",
     },
   ],
 },
 
   twitter: {
     card: "summary_large_image",
-    title: "IPWeb - Công cụ miễn phí",
+    title: "PREV - Công cụ miễn phí",
     description:
       "Check IP, tra cứu mã số thuế và xử lý PDF online miễn phí.",
   },
