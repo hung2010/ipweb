@@ -1,3 +1,3 @@
 verification: {
-  google: "G-XPXQWP8VQC",
+  google: "G-G5SQPC0F9Y",
 }
